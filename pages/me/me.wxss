@@ -1,0 +1,19 @@
+@import "../../style/weui.wxss";
+
+.view_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_head {
+    width: 150rpx;
+    height: 150rpx;
+    margin-top: 40rpx;
+}
+
+.txt_nickname {
+    margin-top: 20rpx;
+    size: 40rpx;
+    margin-bottom: 30rpx;
+}

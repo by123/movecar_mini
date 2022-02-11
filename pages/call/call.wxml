@@ -1,0 +1,25 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <!--<view class="page__hd">
+    </view>-->
+<view class="view_logo">
+        <image class="img_logo" src="../../img/ic_logo.png"></image>
+    </view>    
+
+    <view class="page__bd">
+     <view class="page__td">
+        <view class="weui-cells__title">请输入您的手机号码</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="如: 15012345678" bindinput="setTel" value="{{tel}}"/>
+                </view>
+            </view>
+        </view>
+        </view>
+    </view>
+
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" bindtap="call">免费呼叫车主</button>
+    </view>
+
+</view>

@@ -1,0 +1,44 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <swiper indicator-dots="true" style="height: 500rpx;"
+            autoplay="true" circular="true" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}" style="width: 100%; background-color: #eeeeee;" mode="aspectFill"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_default" wx:if="{{showTopTips}}">{{tipMsg}}</view>
+
+        <view class="weui-cells__title">用户登录</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入手机号" bindinput="setTel" confirm-type="next" value="{{tel}}" type="number"/>
+                </view>
+                <view class="weui-cell__ft">
+                    <view wx:if="{{sendCodeDelaySecond == 0}}" class="weui-vcode-btn" bindtap="getSMSCode">获取验证码</view>
+                    <view wx:else class="weui-vcode-btn-unclickable" bindtap="getSMSCode">请稍候{{sendCodeDelaySecond == 0 ? '' : '(' + sendCodeDelaySecond + 's)'}}</view>
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">验证码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入手机验证码" bindinput="setSmsCode" confirm-type="next" value="{{smsCode}}"/>
+                </view>
+            </view>
+
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn"  bindtap="login" >登录 {{tips}}</button>
+        </view>
+
+    </view>
+</view>

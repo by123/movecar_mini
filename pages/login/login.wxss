@@ -1,0 +1,28 @@
+@import "../../style/weui.wxss";
+
+.button-sp-area {
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
+
+.mini-btn {
+    margin-right: 5px;
+}
+
+.weui-vcode-btn-unclickable {
+    display: inline-block;
+    height: 2.58823529em;
+    margin-left: 5px;
+    padding: 0 0.6em 0 0.7em;
+    border-left: 1px solid #E5E5E5;
+    line-height: 2.58823529em;
+    vertical-align: middle;
+    font-size: 17px;
+    color: #E5E5E5;
+    white-space: nowrap;
+}
+
+.weui-toptips_default {
+    background-color: green;
+}

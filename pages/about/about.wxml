@@ -1,0 +1,14 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="view_head">
+        <image src="../../img/ic_logo.png" class="img_head" background-size="cover"></image>
+
+        <text class="txt_head">快人挪车 v1.1.2</text>
+    </view>
+
+    <view class="weui-footer weui-footer_fixed-bottom">
+        <view class="weui-footer__links">
+            <view class="weui-footer__link">快人挪车</view>
+        </view>
+        <view class="weui-footer__text">Copyright © 2017-2018</view>
+    </view>
+</view>

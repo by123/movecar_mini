@@ -1,0 +1,38 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="view_head">
+        <image src="{{userInfo.avatarUrl}}" class="img_head" background-size="cover"></image>
+
+        <text class="txt_nickname">{{userInfo.nickName}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="../my_qr_code/my_qr_code" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">我的挪车卡</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="../recharge/recharge" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">充值</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="../about/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">关于</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <view class="weui-cell weui-cell_switch">
+                <view class="weui-cell__bd">免打扰</view>
+                <view class="weui-cell__ft">
+                    <switch bindchange="onDisturbChange" checked="{{disturb}}"/>
+                </view>
+            </view>
+            <navigator url="../introduce/introduce" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">产品介绍</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+
+    <view class="page__bd page__bd_spacing" id="scan_btn">
+        <button class="weui-btn" type="warn" bindtap="unbind">解绑账号</button>
+    </view>
+</view>

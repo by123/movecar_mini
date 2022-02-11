@@ -1,0 +1,23 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+<view class="jx_card">
+   <image style="width: 100%; height: 100%" mode="withFix" src="../../img/bg_qr.jpeg"> 
+       <image class="jxlogo" src="{{qr_code_url}}"/> 
+   </image> 
+ </view>
+ <!-- https://xdesh.scrats.cn/car/qr/278998.png -->
+    <!-- <View class="bg_qr"> -->
+        <!-- <image bindtap="previewImage" class="bg_qr_img" mode="withFix" src="../../img/bg_qr.jpeg"></image> -->
+        <!-- <View style="display:flex;">
+            <image bindtap="previewImage" mode="withFix" src="../../img/bg_qr_code_title.png"></image>
+            <image bindtap="previewImage" mode="aspectFill" style="margin-top: 50rpx; width: 680rpx; height: 400rpx;margin-right:   50rpx" src="{{qr_code_url}}"></image>
+        </View> -->
+    <!-- </View> -->
+    <!--<view class="view_head">-->
+        <!--<image class="img_qr_code"-->
+               <!--src="{{qr_code_url}}"-->
+               <!--bindtap="previewImage"-->
+               <!--background-size="cover"></image>-->
+        <!--<text class="txt_description" bindtap="previewImage">点击二维码后长按保存</text>-->
+    <!--</view>-->
+</view>

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/my_qr_code/my_qr_code",
+    "pages/recharge/recharge",
+    "pages/call/call",
+    "pages/about/about",
+    "pages/introduce/introduce"
+  ],
+  "window": {
+    "backgroundColor": "#f39706",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f39706",
+    "navigationBarTitleText": "快人挪车",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#f39706",
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "联系车主",
+        "iconPath": "img/ic_call.png",
+        "selectedIconPath": "img/ic_call_select.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "img/ic_me.png",
+        "selectedIconPath": "img/ic_me_select.png"
+      }
+    ]
+  }
+}

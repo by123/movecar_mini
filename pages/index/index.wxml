@@ -1,0 +1,13 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+    <view class="view_logo">
+        <image class="img_logo" src="../../img/ic_logo.png"></image>
+    </view>
+
+    <view class="page__bd page__bd_spacing" id="scan_btn">
+        <button class="weui-btn" bindtap="scanQrCode">扫一扫，免费呼叫车主</button>
+
+        <button wx:if="{{canRegister}}" class="weui-btn" type="default" bindtap="goToRegister">注册</button>
+    </view>
+
+</view>

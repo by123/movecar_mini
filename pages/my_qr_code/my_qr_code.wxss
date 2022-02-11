@@ -1,0 +1,19 @@
+@import "../../style/weui.wxss";
+
+page {
+    background-color: #f39706;
+    height: 100%;
+}
+.jx_card{
+  width: 100%;
+  height: 1200rpx;
+  position: relative
+}
+ .jxlogo{
+  top: 640rpx;
+  margin-left: 180rpx; 
+  width: 390rpx;
+  height: 390rpx;
+  float: left;
+  position: absolute;
+}

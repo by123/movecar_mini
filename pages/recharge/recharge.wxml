@@ -1,0 +1,35 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+    <view url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../img/ic_logo.png" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{tel}}</view>
+            <view class="weui-media-box__desc">剩余使用时长：{{days}}天</view>
+        </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+        <radio-group bindchange="bindTypeChange">
+            <label class="weui-cell weui-check__label" wx:for="{{types}}" wx:key="{{item}}">
+                <radio class="weui-check" value="{{item.mid}}" checked="{{item.checked}}"/>
+
+                <view class="weui-cell__bd">{{item.title}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                    <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                </view>
+            </label>
+        </radio-group>
+    </view>
+
+    <!--<view class="weui-cells__tips">充值说明</view>
+    <view class="weui-cells__tips">1.xxxxxxxxxxxxxxxx.</view>
+    <view class="weui-cells__tips">2.xxxxxxxxxxxxxxxxxxx.</view>
+    <view class="weui-cells__tips">3.xxxxxxxxxxxxxxxx.</view>
+    <view class="weui-cells__tips">4.xxxxxxxxxxxxxxxxxx.</view>-->
+
+    <view class="weui-btn-area">
+        <button class="weui-btn" bindtap="recharge">充值</button>
+    </view>
+</view>
